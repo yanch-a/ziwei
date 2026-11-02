@@ -8,6 +8,12 @@
 
 Developed by **yanch**, the project serves enthusiasts, learners of traditional Chinese culture, and users who maintain chart collections for ongoing case studies.
 
+## Live Demo
+
+- **Demo URL:** [http://test.ychos.cn:7707/](http://test.ychos.cn:7707/)
+- **Username:** `yanch`
+- **Password:** `123456`
+
 ![Lingjing Shensuo San He chart](images/02-sanhe-chart.jpg)
 
 ## Distinctive Features
@@ -36,9 +42,9 @@ The knowledge-question workflow integrates vector retrieval from a Zi Wei Dou Sh
 
 The project also includes annotation and batch-processing modules for natal Four Transformations, flying transformations, major-period palace overlays, and Fa Xiang Hui Gui. These tools prepare samples, retain analytical explanations and conclusions, and export JSONL data for subsequent training and validation work.
 
-These features describe implementations found in the current source code. Screenshots below show desktop entry points; availability depends on the application version.
+These features describe implementations found in the current source code. Desktop and mobile screenshots appear below; availability depends on the application version.
 
-## Features and Screenshots
+## Desktop Features and Screenshots
 
 ### 1. Chart Record Management
 
@@ -86,6 +92,50 @@ The learning section organizes material into software guidance, Zi Wei Dou Shu t
 
 ![Zi Wei Dou Shu learning resources](images/08-knowledge-center.jpg)
 
+## Mobile · Chart Exploration and AI Study on the Go
+
+The mobile application brings chart exploration, record management, AI interpretation, and learning resources to the phone. Bottom navigation connects charts, Lingjing conversations, help, and the personal center, supporting a continuous workflow from selecting a record to reading an interpretation and asking follow-up questions. The following images are the project's supplied iOS screenshots.
+
+### 1. San He and Four Transformations on a Phone
+
+The portrait layout retains all twelve palaces, star information, transformation markers, and relationship lines. Time-selection rows cover major periods, annual periods, and other layers, alongside controls for Flying Star, San He, and Four Transformations views and quick chart creation.
+
+| San He chart | Four Transformations chart |
+| --- | --- |
+| <img src="images/mobile/sanhe.png" alt="iOS San He chart" width="280" /> | <img src="images/mobile/sihua.png" alt="iOS Four Transformations chart" width="280" /> |
+
+### 2. Interpretation by Year and Palace
+
+The AI interpretation menu organizes natal, major-period, and annual analysis, with year and target-palace selection. Generated content appears progressively in a reading panel over the chart, with controls to stop generation and share results.
+
+| Analysis selection | Interpretation reader |
+| --- | --- |
+| <img src="images/mobile/ai.png" alt="iOS annual and palace analysis selection" width="280" /> | <img src="images/mobile/jx.png" alt="iOS AI interpretation reader" width="280" /> |
+
+### 3. Ongoing Conversations About a Selected Chart
+
+The Lingjing conversation page provides chart selection, conversation history, and new conversations. Users can ask follow-up questions about palaces, star combinations, and personal topics. The example shows a description of the identified request and a chart overview, helping users check the context of the discussion.
+
+| Conversation entry | Chart discussion |
+| --- | --- |
+| <img src="images/mobile/chat.png" alt="iOS AI assistant and chart selection" width="280" /> | <img src="images/mobile/chat2.png" alt="iOS chart discussion and analysis context" width="280" /> |
+
+### 4. Knowledge Retrieval and Learning Resources
+
+Knowledge questions can incorporate retrieved Zi Wei Dou Shu material; the screenshot shows relevant reference excerpts. The help center organizes searchable articles into software guidance, terminology, notable figures, and other categories for consulting concepts and instructions while studying.
+
+| Knowledge questions and retrieved excerpts | Help center |
+| --- | --- |
+| <img src="images/mobile/kep.png" alt="iOS knowledge questions and retrieved references" width="280" /> | <img src="images/mobile/help.jpg" alt="iOS help and learning categories" width="280" /> |
+
+### 5. Chart Records and Personal Center
+
+The record list provides name or note search, group filtering, and controls to add, edit, delete, and open charts. The personal center displays membership tier, status, validity, and invitation information for reviewing account and service details.
+
+| Chart records | Personal center |
+| --- | --- |
+| <img src="images/mobile/personList.png" alt="iOS chart record search and management" width="280" /> | <img src="images/mobile/me.png" alt="iOS personal center and membership information" width="280" /> |
+
 ## Typical Workflow
 
 1. Create or import a chart record, then organize birth details, groups, and notes.
@@ -99,6 +149,7 @@ The learning section organizes material into software guidance, Zi Wei Dou Shu t
 | Layer | Technologies and responsibilities |
 | --- | --- |
 | User interface and desktop | Vue 3, Element Plus, and Electron for record management, chart visualization, and AI chat |
+| Mobile | uni-app and Vue 3 for phone-based charts, AI conversations, help, and personal-center pages |
 | Business backend | Java, Spring Boot, and MyBatis-Plus for chart records, life histories, sessions, and analysis APIs |
 | AI services | Lemon AI and Spring AI for model integration and analysis services, with SSE streaming responses |
 | Domain data | Dictionaries for stars, palaces, and Four Transformations, plus modules for prompts and model data management |
@@ -107,5 +158,3 @@ The learning section organizes material into software guidance, Zi Wei Dou Shu t
 
 - **Name:** Lingjing Shensuo (灵境深索)
 - **Developer:** yanch
-- **Documentation and screenshot date:** October 16, 2026
-- **Screenshot source:** The actual Lingjing Shensuo Windows application running on the developer's computer. Original window captures are stored in `images/`.
